@@ -1496,6 +1496,22 @@
                 margin-top: clamp(20px, 4vw, 60px);
             }
 
+            .about-image-container {
+                width: 100%;
+                height: 100%;
+        }
+
+            .training-image {
+        position: relative;
+        width: 100%;
+        height: 420px; /* ajuste se quiser maior */
+        background-image: url("Treino focado na ITUFIT Academia.png"); /* CAMINHO DA IMAGEM */
+        background-size: cover;
+        background-position: center right; /* mantém a atleta visível */
+        background-repeat: no-repeat;
+        border-radius: 16px;
+        overflow: hidden;
+}
     </style>
 </head>
 <body>
@@ -1948,9 +1964,9 @@
             <div class="location-container">
                 <div class="location-info">
                     <h3>Estamos em <span>Ituporanga - SC</span></h3>
-                    <p><i class="fas fa-map-marker-alt" style="color: var(--yellow); margin-right: 15px;"></i> Avenida dos Imigrantes, 1500 - Centro, Ituporanga - SC</p>
+                    <p><i class="fas fa-map-marker-alt" style="color: var(--yellow); margin-right: 15px;"></i>   Centro, Ituporanga - SC</p>
                     <p><i class="fas fa-clock" style="color: var(--yellow); margin-right: 15px;"></i> Segunda a Sexta: 5h às 23h | Sábado: 7h às 21h | Domingo: 8h às 14h</p>
-                    <p><i class="fas fa-phone" style="color: var(--yellow); margin-right: 15px;"></i> (47) 3534-1234 | WhatsApp: (47) 99999-9999</p>
+                    <p><i class="fas fa-phone" style="color: var(--yellow); margin-right: 15px;"></i> (47) 3333-3333| WhatsApp: (47) 99999-9999</p>
                 </div>
                 
                 <div class="map-placeholder">
@@ -2173,7 +2189,7 @@
         // Halteres caindo no fundo
         function createDumbbells() {
             const container = document.getElementById('dumbbells-container');
-            const dumbbellIcons = ['🏋️', '💪', '🏋️‍♂️', '🏋️‍♀️', '🔩', '⚙️'];
+            const dumbbellIcons = ['🔩', '💪', '🏋️‍♂️', '💪', '🔩', '🔩'];
             
             for (let i = 0; i < 15; i++) {
                 const dumbbell = document.createElement('div');
